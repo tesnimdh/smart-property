@@ -1,0 +1,154 @@
+/* Shared form elements */
+.input,
+.select {
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text);
+  background: var(--bg);
+  transition: border-color 0.15s;
+  outline: none;
+  width: 100%;
+}
+
+.input:focus,
+.select:focus {
+  border-color: var(--brand);
+}
+
+.input.buyer:focus {
+  border-color: var(--buyer);
+}
+
+/* Grids */
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 1.5rem;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .grid2,
+  .grid3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Form card */
+.formCard {
+  background: var(--surface);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.sectionTitle {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Buttons */
+.submitBtn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: opacity 0.15s, transform 0.1s;
+  letter-spacing: 0.2px;
+}
+
+.submitBtn:hover {
+  opacity: 0.88;
+}
+
+.submitBtn:active {
+  transform: scale(0.99);
+}
+
+.submitBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.submitBtnBuyer {
+  background: var(--buyer);
+  color: #fff;
+}
+
+.submitBtnSeller {
+  background: var(--seller);
+  color: #fff;
+}
+
+/* Error */
+.errorMsg {
+  background: #fff0f0;
+  border: 1px solid #f5c0c0;
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #b03535;
+  font-size: 13px;
+  margin-bottom: 1rem;
+}
+
+/* Spinner */
+.spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hero */
+.hero {
+  margin-bottom: 2rem;
+}
+
+.heroTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--brand);
+}
+
+.heroTitleBuyer {
+  color: var(--accent);
+}
+
+.heroSub {
+  color: black;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 300;
+}

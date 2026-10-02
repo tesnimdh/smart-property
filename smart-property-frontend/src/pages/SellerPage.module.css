@@ -1,0 +1,37 @@
+.predResult {
+  background: var(--surface);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  transition: box-shadow 0.15s;
+}
+
+.predResult:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+
+.predLabel {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.predPrice {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: var(--buyer);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.predSub {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 12px;
+  font-weight: 300;
+}

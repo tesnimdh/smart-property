@@ -1,0 +1,59 @@
+.nav {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: var(--brand);
+  letter-spacing: -0.5px;
+  font-weight: 600;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  background: var(--bg);
+  border-radius: 40px;
+  padding: 4px;
+}
+
+.tab {
+  padding: 8px 22px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+  background: transparent;
+  color: var(--muted);
+}
+
+.tab:hover:not(.activeBuyer):not(.activeSeller) {
+  background: rgba(0, 0, 0, 0.06);
+  color: var(--text);
+}
+
+.activeBuyer {
+  background: var(--buyer) !important;
+  color: #fff !important;
+}
+
+.activeSeller {
+  background: var(--seller) !important;
+  color: #fff !important;
+}

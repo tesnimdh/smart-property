@@ -1,0 +1,32 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --brand: #1a3c5e;
+  --brand-light: #e8f0f7;
+  --accent: #E91E63;
+  --accent-light: #fdf0e8;
+  --surface: #ffffff;
+  --bg: #f7f5f2;
+  --text: black;
+  --muted: black;
+  --border: rgba(0, 0, 0, 0.1);
+  --radius: 12px;
+  --seller: #1a3c5e;
+  --buyer: #E91E63;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, select, textarea, button {
+  font-family: inherit;
+}
