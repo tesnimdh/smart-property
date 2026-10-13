@@ -10,7 +10,7 @@ export default function Navbar({ mode, onModeChange }: Props) {
   return (
     <nav className={styles.nav}>
       <div className={styles.logo}>
-        Immo<span>Tunisia</span>
+        Smart<span>Property</span>
       </div>
 
       <div className={styles.tabs}>
